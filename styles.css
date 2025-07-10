@@ -109,3 +109,42 @@ nav #cart{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.F-Products {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.F-Products h2 {
+  font-size: 2em;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
