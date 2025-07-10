@@ -177,8 +177,11 @@ nav #cart{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0px 30px;
-    background-color: white;
+    padding: 10px 0px;
+    background-color: linear-gradient(to right, #f8f9fa, #ffffff);
+    /* background-color: white; */
     border-radius: 10px;
     height: auto;
     box-shadow: 2px 2px 30px #dfdfdf;
@@ -194,3 +197,4 @@ nav #cart{
     transition: 1s ease-in;
     /* animation: spin 10s linear infinite; */
 }
+
