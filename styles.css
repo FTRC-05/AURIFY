@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
     :root {
@@ -22,11 +23,9 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-
 }
 
 nav{
-    height: 100px;
     display: flex;
     /* border: 1px solid black; */
     justify-content: space-between;
@@ -73,7 +72,8 @@ nav #cart{
 }
 
 .hero .text{
-    padding: 100px 70px;
+    /* padding: 100px 70px; */
+    padding: 5% 7%;
 }
 
 .hero .text h1{
@@ -88,12 +88,13 @@ nav #cart{
 }
 
 .hero button{
-    padding: 10px;
+    width: auto; /* Let content dictate width */
+    padding: 10px 30px;
     border-radius: 10px;
     border: none;
     background-color: #FBC531;
     color: white;
-    width: 30%;
+    /* width: 30%; */
     height: 50px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -128,6 +129,7 @@ nav #cart{
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin: 0px 30px;
 }
 
 .product-card {
@@ -135,7 +137,8 @@ nav #cart{
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 220px;
+   max-width: 300px;
+  flex: 1 1 220px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -180,7 +183,7 @@ nav #cart{
     text-align: center;
     margin: 0px 30px;
     padding: 10px 0px;
-    background-color: linear-gradient(to right, #f8f9fa, #ffffff);
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
     /* background-color: white; */
     border-radius: 10px;
     height: auto;
@@ -193,8 +196,7 @@ nav #cart{
 }
 
 .categories .categ img:hover{
-    rotate: 360deg;
-    transition: 1s ease-in;
-    /* animation: spin 10s linear infinite; */
+    transform: scale(1.1) rotate(15deg);
+    transition: 0.5s ease-in;
 }
 
