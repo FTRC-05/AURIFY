@@ -44,7 +44,7 @@ nav img{
 } */
 
 nav span{
-    margin: 50px 0px;
+    margin: 50px 30px;
     /* font-size:140px; */
 }
 
@@ -73,7 +73,7 @@ nav #cart{
 
 .hero .text{
     /* padding: 100px 70px; */
-    padding: 5% 7%;
+    padding: 5% 5%;
 }
 
 .hero .text h1{
@@ -136,8 +136,8 @@ nav #cart{
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-   max-width: 300px;
+  padding: 20px 30px;
+   max-width: 100%;
   flex: 1 1 220px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -183,11 +183,13 @@ nav #cart{
     text-align: center;
     margin: 0px 30px;
     padding: 10px 0px;
-    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    background: white;
+    /* background: linear-gradient(to right, #f8f9fa, #ffffff); */
     /* background-color: white; */
     border-radius: 10px;
     height: auto;
-    box-shadow: 2px 2px 30px #dfdfdf;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 2px 2px 30px #dfdfdf; */
 }
 
 .categories .categ img{
