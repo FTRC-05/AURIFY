@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    :root {
+    --primary-yellow: #FBC531;
+    --aurify-gold: #D0932B;
+    --aurify-green: #9EAD9D;
+    --aurify-blue: #00AEEF;
+    --background-cream: #FFFDF5;
+    --background-yellow: #FFF0C1;
+    --text-black: #111111;
+    --card-bg: #F5F5F5;
+    --hero-bg-top: #FFFDF5;
+    --hero-bg-bottom: #FFF0C1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    /* background-color:#FFFDF5; */
+    background-color: #FFFDF5;
+}
+
+nav img{
+    width: 200px;
+}
+
+/* .navlinks{
+    margin: 50px 0px;
+} */
+
+nav span{
+    margin: 50px 0px;
+    /* font-size:140px; */
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav #cart{
+    color: black;
+}
+
+.hero{
+    display: flex;
+    gap: 100px;
+    padding: 40px 0px;
+    background: linear-gradient(to bottom, #FFFDF5 0%, #FFF0C1 100%);
+    /* background-attachment: fixed; */
+}
+
+.hero .text{
+    padding: 100px 70px;
+}
+
+.hero .text h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.hero .text p{
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+.hero button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FBC531;
+    color: white;
+    width: 30%;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.hero .img img{
+    /* rotate: 360deg;
+    transition: 1.5s; */
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
