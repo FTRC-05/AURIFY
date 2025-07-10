@@ -4,7 +4,15 @@
     box-sizing: border-box;
 }
 
-    :root {
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
     --primary-yellow: #FBC531;
     --aurify-gold: #D0932B;
     --aurify-green: #9EAD9D;
@@ -15,14 +23,6 @@
     --card-bg: #F5F5F5;
     --hero-bg-top: #FFFDF5;
     --hero-bg-bottom: #FFF0C1;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
 }
 
 nav{
