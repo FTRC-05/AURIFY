@@ -66,7 +66,7 @@ nav #cart{
 .hero{
     display: flex;
     gap: 100px;
-    padding: 40px 0px;
+    padding: 10px 0px;
     background: linear-gradient(to bottom, #FFFDF5 0%, #FFF0C1 100%);
     /* background-attachment: fixed; */
 }
@@ -111,6 +111,45 @@ nav #cart{
   to { transform: rotate(360deg); }
 }
 
+.benefits{
+    display: flex;
+    /* border: 1px solid black; */
+    background-color: rgba(236, 235, 235, 0.363);
+    padding: 30px;
+    margin: 50px 50px;
+    border-radius: 10px;
+}
+
+.benefits .terms {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.countdown{
+    /* display: flex; */
+    padding-bottom: 30px;
+}
+
+.countdown .label{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: gold;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.countdown .timer{
+    background-color: #000;
+    /* background: linear-gradient(to right, yellow, gold); */
+    color: #fff;
+    padding: 8px 12px;
+    margin: 0 2px;
+    border-radius: 6px;
+    margin: 0px 30px;
+}
+
 .F-Products {
   padding: 40px 20px;
   background-color: #f9f9f9;
@@ -120,7 +159,7 @@ nav #cart{
 .F-Products h2 {
   font-size: 2em;
   text-transform: capitalize;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #333;
 }
 
