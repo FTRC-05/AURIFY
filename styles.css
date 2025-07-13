@@ -190,8 +190,8 @@ nav #cart{
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px 30px;
-   max-width: 100%;
-  flex: 1 1 220px;
+    width: 100%;
+  flex: 1 220px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -202,7 +202,6 @@ nav #cart{
 
 .product-card img {
   max-width: 100%;
-  border-radius: 8px;
 }
 
 .product-card .to-cart{
@@ -504,12 +503,16 @@ nav #cart{
     display: none;
    } 
    .hamburger{
-    display: block;
+    display: flex;
     font-size: 24px;
    }
 
    .hero{
     display: block;
+   }
+
+   .hero .text h1{
+    font-size: 30px;
    }
 
    .hero .img img{
