@@ -339,6 +339,30 @@ nav #cart{
     position: relative;
 }
 
+.sound2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 20px 0px;
+}
+
+.sound2 p{
+    margin: 15px 0px;
+    text-transform: capitalize;
+    color: #b6b5b5;
+}
+
+.sound2 a{
+    color: #5f5f5f;
+    text-decoration: none;
+}
+
+.sound2 video{
+    width: 75%;
+}
+
 .sound p{
     position: absolute;
     top: 50%; /* Centers vertically (adjust as needed) */
@@ -604,6 +628,32 @@ nav #cart{
     background: #333;
 }
 
+.flex{
+     position: relative; /* Essential for positioning the text */
+    width: 80%; /* Adjust width as needed */
+    margin: 40px auto; /* Center the container and add some space */
+    text-align: center; /* Center the text visually if you want */
+}
+
+.flex .prod-hr{
+     border: none; /* Remove default border */
+    border-top: 1px solid #ccc; /* Create your desired line style */
+    /* You can adjust thickness, color, or make it a double line with border-bottom */
+    margin: 0; /* Remove default margin from hr */
+}
+
+
+.flex .earbuds{
+     position: absolute; /* Take the text out of normal flow */
+    top: 50%; /* Center vertically relative to the HR (adjust for text height) */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Precisely center the text */
+    background-color: white; /* Match your background to "cut out" the line */
+    padding: 0 10px; /* Add padding around the text to hide the line underneath */
+    font-family: sans-serif; /* Example font */
+    font-size: 1.2em; /* Example font size */
+    color: #333; /* Example text color */
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .hero{
