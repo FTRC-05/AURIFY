@@ -297,3 +297,15 @@ document.addEventListener('DOMContentLoaded', function() {
         productsContainer.appendChild(productCard);
     })
     });
+
+    document.addEventListener('contextmenu', function(e) {
+    // Check if the target element is an image or video
+    if (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO') {
+        e.preventDefault(); // Prevent the default right-click menu
+    }
+});
+
+// To apply to the whole document (more aggressive)
+// document.addEventListener('contextmenu', function(e) {
+//     e.preventDefault();
+// });
