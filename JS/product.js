@@ -1,19 +1,19 @@
 const commodities = [
     {
         id : 1,
-        image: "",
+        image: "../img/ftprod3.png",
         productName: "Airpods Max",
         Price: 450000,
     },
     {
         id : 2,
-        image: "",
+        image: "../img/ftprod1.png",
         productName: "Airpods Max",
         Price: 450000,
     },
     {
         id : 3,
-        image: "",
+        image: "../img/3a9c95d02cbf861b8438527b7a3a82bd-removebg-preview.png",
         productName: "Airpods Max",
         Price: 450000,
     },
