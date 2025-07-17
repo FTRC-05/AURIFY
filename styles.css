@@ -522,7 +522,7 @@ nav #cart{
   color: #555;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 
     nav img{
         width: 100px;
@@ -549,7 +549,8 @@ nav #cart{
    }
 
    .benefits{
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
    }
 
@@ -586,6 +587,28 @@ nav #cart{
     padding: 0px 20px;
    }
 
+   .products .prod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .products h3{
+    margin: 20px 0px;
+   }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .benefits{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefits .terms{
+        
+    }
 }
 
 
