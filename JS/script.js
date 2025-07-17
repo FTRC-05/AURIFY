@@ -46,3 +46,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//newsletter funtionality
+const email_box = document.getElementById('footer-txt');
+const submit_btn = document.getElementById('footer-btn');
+
+submit_btn.addEventListener('click', () =>{
+  event.preventDefault();
+  const userInput = email_box.value;
+  if(userInput){
+    alert('Subscribed!')
+  } else{
+    alert('Enter your email address to subscribe')
+  }
+});
+
+function targetMsg(){
+  
+}
