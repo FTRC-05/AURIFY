@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const productCard = document.createElement('div');
         productCard.className = 'product-card';
 
-        const imagePath = product.image || '/img/ftprod3.png';
+        const imagePath = product.image || '../img/ftprod3.png';
 
 
         productCard.innerHTML = `
