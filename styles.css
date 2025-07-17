@@ -25,6 +25,16 @@ body, html{
     --hero-bg-bottom: #FFF0C1;
 }
 
+/* header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} */
+
 nav{
     display: flex;
     /* border: 1px solid black; */
@@ -68,13 +78,14 @@ nav #cart{
     display: none;
     background: none;
     border: none;
+    font-size: 1.8rem;
     color: black;
     cursor: pointer;
     /* padding: 10px; */
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 21px;
+    height: 21px; */
 }
 
 .hero{
@@ -529,92 +540,115 @@ nav #cart{
   color: #555;
 }
 
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 600px){
     nav img{
         width: 100px;
     }
-   .navlinks{
-    display: none;
-   } 
-   .hamburger{
-    display: flex;
-    font-size: 24px;
-   }
 
-   .hero{
+    .navlinks {
+    position: absolute !important;
+    top: 15%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.2); /* subtle white */
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* background-color: #FDF6EC; */
+    /* background: linear-gradient(to right, #f2c94c, #56ccf2); */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.navlinks.open {
+    max-height: 400px; /* or enough to show all links */
+    transition: max-height 0.5s ease-in;
+}
+
+.navlinks ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.hamburger {
+    display: block; /* show on mobile */
+}
+
+
+.hero{
     display: block;
-   }
+}
 
-   .hero .text h1{
+.hero .text h1{
     font-size: 30px;
-   }
+}
 
-   .hero .img img{
+.hero .img img{
     margin-top: 100px;
     width: 90%;
-   }
+}
 
-   .benefits{
+.benefits{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-   }
+}
 
-   .benefits .terms{
+.benefits .terms{
     margin: 20px 0px;
-   }
+}
 
-   .categ{
+.categ{
     display: block;
     /* margin: 0 auto; */
-   }
+}
 
-   .categories-card{
+.categories-card{
     margin: 30px 0px;
-   }
+}
 
-   .why-aurify .brand{
+.why-aurify .brand{
     display: block;
-   }
+}
 
-   .war_ranty{
+.war_ranty{
     margin: 30px 55px;
-   }
+}
 
-   .brand .ship{
+.brand .ship{
     display: block;
     margin: 0 auto;
     width: 70%;
     border-radius: 10px;
     font-size: 20px;
-   }
+}
 
-   .subsribe form{
+.subsribe form{
     padding: 0px 20px;
-   }
+}
 
-   .products .prod{
+.products .prod{
     display: flex;
     justify-content: center;
     align-items: center;
-   }
+}
 
-   .products h3{
+.products h3{
     margin: 20px 0px;
-   }
+}
 
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .benefits{
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
-
-    .benefits .terms{
-        
     }
 }
 

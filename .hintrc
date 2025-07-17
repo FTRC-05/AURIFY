@@ -18,6 +18,7 @@
           "video[playsinline]"
         ]
       }
-    ]
+    ],
+    "css-prefix-order": "off"
   }
 }

@@ -61,6 +61,18 @@ submit_btn.addEventListener('click', () =>{
   }
 });
 
-function targetMsg(){
-  
-}
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.getElementById('navLinks');
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      // Optionally toggle icon between menu and close:
+      hamburgerBtn.innerHTML = 
+        navLinks.classList.contains('open')
+          ? "<i class='bx bx-x'></i>"
+          : "<i class='bx bx-menu'></i>";
+    });
+  });
+
